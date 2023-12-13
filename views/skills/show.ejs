@@ -1,0 +1,10 @@
+<!-- views/skills/show.ejs -->
+<%- include('../partials/header') %>
+
+<h2><%= skill.name %></h2>
+
+<form action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
+  <button type="submit">Delete Skill</button>
+</form>
+
+<%- include('../partials/footer') %>
